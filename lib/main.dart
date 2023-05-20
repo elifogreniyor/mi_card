@@ -13,7 +13,16 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blueAccent,
         body: SafeArea(
-          ),
+            child: Column(
+          children: <Widget>[
+            CircleAvatar(
+              radius: 50.0,
+              backgroundImage: AssetImage('images/IMG_7372.jpg'),
+              backgroundColor: Colors.transparent,
+            ),
+            Text('Leo Pamuk'),
+          ],
+        )),
       ),
     );
   }
